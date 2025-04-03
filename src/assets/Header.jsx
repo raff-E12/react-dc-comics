@@ -21,7 +21,7 @@ export default function Header() {
         <li><a href="#" className='links'>Shop</a></li>
       </ul>
      </div>
-     <div className='ham-icon'>
+     <div className='box-icon ham'>
         <i class="fa-solid fa-bars"></i>
      </div>
    </header>
