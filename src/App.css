@@ -1,12 +1,147 @@
 
 /* CSS Generale Della Pagina */
 
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@595&family=Gabarito&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@282&family=Montserrat:ital,wght@0,417;1,417&family=Nerko+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Plus+Jakarta+Sans:wght@660&family=Poppins:wght@400;900&family=Quicksand:wght@647&family=Raleway:wght@526&family=Roboto:wght@499&family=Sometype+Mono:ital,wght@0,614;1,614&family=Titan+One&display=swap');
+
 :root{
-  --general-color: #F2F2F2;
+  --general-color: #ffffff;
   --secondary-color: #0282F9;
   --blue-01: #0597F2;
   --main-color-general: #262626;
   --blue-02: #11538C;
   --bg-img-hero: "../public/img/jumbotron.jpg";
   --bg-img-footer: "../public/img/footer-bg.jpg";
+  --font-site-url : "Open Sans", sans-serif;
+}
+
+/* Responsive Flexbox Utilities */
+
+/* Contenitore fluido a larghezza piena */
+.container-flex-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+/* Contenitore Header Logo e altro */
+
+.icon-logo{
+  border: 2px solid red;
+  width: 70px;
+  height: 70px;
+}
+
+/* Contenitore con larghezza massima e padding */
+.container-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Colonne responsabili per la disposizione su schermi diversi */
+
+/* sm (Small - mobile): schermi inferiori a 576px */
+.col-sm-12 {
+  width: 100%;
+}
+
+/* md (Medium - tablet): schermi da 576px a 768px */
+@media (min-width: 576px) {
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/* lg (Large - desktop): schermi da 768px a 992px */
+@media (min-width: 768px) {
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/* xl (Extra Large - schermi ampi): schermi da 992px a 1200px */
+@media (min-width: 992px) {
+  .col-xl-4 {
+    width: 33.33%;
+  }
+  .col-xl-6 {
+    width: 50%;
+  }
+  .col-xl-12 {
+    width: 100%;
+  }
+}
+
+/* 2xl (2 Extra Large - schermi molto ampi): schermi da 1200px a 1400px */
+@media (min-width: 1200px) {
+  .col-2xl-4 {
+    width: 33.33%;
+  }
+  .col-2xl-5 {
+    width: 70%;
+  }
+  .col-2xl-6 {
+    width: 50%;
+  }
+  .col-2xl-12 {
+    width: 100%;
+  }
+}
+
+/* xxl (Ultra Large - schermi più ampi): schermi oltre 1400px */
+@media (min-width: 1400px) {
+  .col-xxl-4 {
+    width: 33.33%;
+  }
+  .col-xxl-6 {
+    width: 50%;
+  }
+  .col-xxl-7 {
+    width: 60%;
+  }
+  .col-xxl-12 {
+    width: 100%;
+  }
+}
+
+/* Stile di implementazione nelle seguenti sezione */
+
+.header-sc{
+  border: 2px solid red;
+  justify-content: space-between;
+  background-color: var(--general-color);
+  padding: 10px;
+  font-family: var(--font-site-url);
+}
+
+.nav-links-hd{
+  border: 2px solid red;
+  padding: 10px;
+}
+
+.nav-links-hd .list-nav{
+  width: 100%;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: var(--font-site-url);
 }

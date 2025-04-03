@@ -3,30 +3,25 @@ import React from 'react'
 export default function Header() {
   return (
    <>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
+   <header className='header-sc container-flex-fluid col-sm-12 col-xxl-12' aria-label='Header-Section'>
+     <div className='icon-logo'>
+      <img src="public/img/dc-logo.png" alt="" title='Benvenuto' aria-label='logo'/>
+     </div>
+     <div className='nav-links-hd container-flex-fluid col-xxl-7 col-2xl-5' aria-label='Header-Links-Nav'>
+      <ul className='container-flex col-sm-12 list-nav'>
+        <li><a href="#">Charcters</a></li>
+        <li><a href="#">Comics</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">TV</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Collectibles</a></li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="#">Fans</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Shop</a></li>
       </ul>
-    </div>
-  </div>
-</nav>
+     </div>
+   </header>
    </>
   )
 }
