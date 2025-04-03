@@ -13,7 +13,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    height: 100vh;
+    height: auto;
   }
 
   h1{
@@ -133,13 +133,8 @@
     justify-content: flex-start;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: calc(80vh - 100%);
     background-color: #eeeeee;
-  }
-
-  .box-fluid{
-    width: 100%;
-    overflow: hidden;
   }
 
   @media (max-width: 480px) {

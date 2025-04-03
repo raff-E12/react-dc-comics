@@ -6,7 +6,7 @@ export default function Header() {
    <header className='header-sc container-flex-fluid col-sm-12 col-xxl-12' aria-label='Header-Section'>
       <div className='max-container-break'>
         <div className='icon-logo'>
-        <img src="public/img/dc-logo.png" alt="" title='Benvenuto' aria-label='logo'/>
+        <img src="/img/dc-logo.png" alt="" title='Benvenuto' aria-label='logo'/>
       </div>
       <div className='nav-links-hd container-flex-fluid col-xxl-7 col-2xl-5 col-xl-3' aria-label='Header-Links-Nav'>
         <ul className='container-flex col-sm-12 list-nav'>

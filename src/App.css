@@ -254,5 +254,109 @@
   }
 }
 
-/* Hero */
+/* Hero Section */
+.hero-sc{
+  padding: 30px;
+  background-color: var(--main-color-general);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
 
+.container-hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Card */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(33.33% - 20px);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Immagine della card */
+.card-img {
+  width: 80%;
+  height: 190px;
+  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid #ddd;
+}
+
+/* Contenuto della card */
+.card-content {
+  padding: 20px;
+}
+
+/* Titolo della card */
+.card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: var(--font-site-url);
+}
+
+/* Descrizione della card */
+.card-description {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+  font-family: var(--font-site-url);
+}
+
+/* Pulsante della card */
+.card-btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: var(--font-site-url);
+}
+
+.card-btn:hover {
+  background-color: #555;
+}
+
+.text-hero{
+  border: 2px solid red;
+  font-family: var(--font-site-url);
+  color: var(--general-color);
+}
+
+/* Responsività */
+@media (max-width: 992px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%;
+  }
+}
