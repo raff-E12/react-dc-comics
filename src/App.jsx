@@ -3,6 +3,7 @@ import react from "react"
 import './App.css'
 import Header from './assets/Header'
 import Hero from './assets/Hero'
+import Shop from './assets/Shop'
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <>
        <Header/>
        <Hero/>
+       <Shop/>
     </>
   )
 }
