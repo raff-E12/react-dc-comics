@@ -7,7 +7,9 @@ import Header from './assets/Header'
 function App() {
   return (
     <>
-      <Header/>
+      <div className='box-fluid'>
+       <Header/>
+      </div>
     </>
   )
 }

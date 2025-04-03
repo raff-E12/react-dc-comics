@@ -65,6 +65,14 @@
   margin: 0 auto;
 }
 
+.max-container-break{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 /* Colonne responsabili per la disposizione su schermi diversi */
 
 /* sm (Small - mobile): schermi inferiori a 576px */
@@ -79,6 +87,15 @@
   }
   .col-md-12 {
     width: 100%;
+  }
+
+  .icon-logo{
+    width: 40px;
+    height: 40px;
+  }
+
+  .max-container-break{
+    max-width: 90%;
   }
 }
 
@@ -96,6 +113,10 @@
   .col-lg-12 {
     width: 100%;
   }
+
+  .max-container-break{
+    max-width: 95%;
+  }
 }
 
 /* xl (Extra Large - schermi ampi): schermi da 992px a 1200px */
@@ -108,6 +129,11 @@
   }
   .col-xl-12 {
     width: 100%;
+  }
+  
+  .icon-logo{
+    width: 52px;
+    height: 52px;
   }
 }
 
@@ -125,6 +151,15 @@
   .col-2xl-12 {
     width: 100%;
   }
+
+  .icon-logo{
+    width: 60px;
+    height: 60px;
+  }
+
+  .max-container-break{
+    max-width: 89%;
+  }
 }
 
 /* xxl (Ultra Large - schermi più ampi): schermi oltre 1400px */
@@ -141,12 +176,23 @@
   .col-xxl-12 {
     width: 100%;
   }
+
+  .icon-logo{
+    width: 60px;
+    height: 60px;
+  }
+
+  .max-container-break{
+    max-width: 81%;
+  }
 }
 
 /* Stile di implementazione nelle seguenti sezione */
 
+/* Header */
+
 .header-sc{
-  justify-content: space-between;
+  justify-content: center;
   background-color: var(--general-color);
   padding: 10px;
   font-family: var(--font-site-url);
@@ -207,3 +253,6 @@
     display: flex;
   }
 }
+
+/* Hero */
+

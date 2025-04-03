@@ -137,6 +137,11 @@
     background-color: #eeeeee;
   }
 
+  .box-fluid{
+    width: 100%;
+    overflow: hidden;
+  }
+
   @media (max-width: 480px) {
     .card {
       padding: 1.5rem;
