@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
   }
   
   body {
@@ -15,6 +14,10 @@
     align-items: flex-start;
     justify-content: center;
     height: 100vh;
+  }
+
+  h1{
+    font-size: 2.986rem;
   }
   
   .card {
@@ -25,16 +28,34 @@
     width: 100%;
     max-width: 400px;
   }
+
+  h3{
+    font-size: 2.074rem;
+  }
+
+  h4{
+    font-size: 1.728rem;
+  }
+
+  h5{
+    font-size: 1.44rem;
+  }
+
+  h6{
+    font-size: 1.2rem;
+  }
   
   h2 {
     text-align: center;
     margin-bottom: 1rem;
+    font-size: 2.488rem;
   }
   
   p {
     text-align: center;
     color: #6c757d;
     margin-bottom: 1.5rem;
+    font-size: 1rem;
   }
   
   .input-container {
@@ -69,6 +90,10 @@
     cursor: pointer;
     transition: background 0.3s;
   }
+
+  small{
+    font-size: 0.833rem;
+  }
   
   button:hover {
     background-color: #0056b3;
@@ -80,8 +105,8 @@
 
   a{
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
+    font-size: 1rem;
   }
   
   .back-link {
