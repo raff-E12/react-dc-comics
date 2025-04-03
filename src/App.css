@@ -1,0 +1,12 @@
+
+/* CSS Generale Della Pagina */
+
+:root{
+  --general-color: #F2F2F2;
+  --secondary-color: #0282F9;
+  --blue-01: #0597F2;
+  --main-color-general: #262626;
+  --blue-02: #11538C;
+  --bg-img-hero: "../public/img/jumbotron.jpg";
+  --bg-img-footer: "../public/img/footer-bg.jpg";
+}
