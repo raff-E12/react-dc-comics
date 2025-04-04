@@ -8,7 +8,7 @@ export default function Header() {
         <div className='icon-logo'>
         <img src="/img/dc-logo.png" alt="" title='Benvenuto' aria-label='logo'/>
       </div>
-      <div className='nav-links-hd container-flex-fluid col-xxl-7 col-2xl-5 col-xl-3' aria-label='Header-Links-Nav'>
+      <div className='nav-links-hd container-flex-fluid col-xxl-7 col-2xl-5 col-lg-3' aria-label='Header-Links-Nav'>
         <ul className='container-flex col-sm-12 list-nav'>
           <li><a href="#" className='links'>Charcters</a></li>
           <li><a href="#" className='links'>Comics</a></li>
