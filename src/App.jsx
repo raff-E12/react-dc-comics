@@ -6,16 +6,18 @@ import Hero from './assets/Hero'
 import Shop from './assets/Shop'
 import Links from './assets/Links'
 import Social from './assets/Social'
+import ListLinks from "./components/links.json"
 
+// Creazione della struttura principale del sito
 
 function App() {
   return (
     <>
-       <Header/>
+       <Header links={ListLinks}/>
        <Hero/>
        <Shop/>
        <footer className='footer-sc'>
-        <Links />
+        <Links links={ListLinks}/>
         <Social/>
        </footer>
     </>

@@ -568,6 +568,10 @@
   top: -10px;
 }
 
+.links-tb ul li a:hover{
+  color: var(--general-color);
+}
+
 .social-ft{
   padding: 50px;
   gap: 20px;
@@ -629,3 +633,26 @@
     width: 100%;
   }
 }
+
+/* Extra Style */
+
+::selection {
+  background: var(--secondary-color);
+  color: var(--general-color); 
+}
+
+::-webkit-scrollbar{
+   background-color: var(--general-color);
+   width: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--blue-01);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-button{
+  background-color: transparent;
+  height: 2px;
+}
+

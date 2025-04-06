@@ -1,0 +1,37 @@
+{
+    "NavLinks": [
+       {"id": 1, "links": "Charcters"},
+       {"id": 2, "links":  "Comics"},
+       {"id": 3, "links": "Movies"},
+       {"id": 4, "links":  "TV"}, 
+       {"id": 5, "links": "Games"},
+       {"id": 6, "links": "Collectibles"},
+       {"id": 7, "links": "Videos"},
+       {"id": 8, "links": "Fans"}, 
+       {"id": 9, "links": "News"},
+       {"id": 10, "links": "Shop"}
+    ],
+
+    "FooterLinks":[
+        {
+            "id": 1,
+            "title": "DC Comics",
+            "links": ["Charcters", "Comics", "Movies", "TV", "Games", "Videos", "News"]
+        },
+        {
+            "id": 2,
+            "title": "DC",
+            "links": ["Terms Of Use", "Privacy Policy(News)", "Ad Choices", "Jobs", "Subscriptions", "Talent Workshops", "CPSC Certificates", "Shop Help", "Concat Use"]
+        },
+        {
+            "id": 3,
+            "title": "Sites",
+            "links": ["DC", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"]
+        },
+        {
+            "id": 4,
+            "title": "Shop",
+            "links": ["Shop DC", "Shop DC Collectibles"]
+        }
+    ]
+}

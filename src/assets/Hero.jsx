@@ -1,4 +1,5 @@
 import React from 'react'
+import Cards from '../components/Cards'
 
 export default function Hero() {
   return (
@@ -6,38 +7,11 @@ export default function Hero() {
       <div className='container-flex text-hero col-md-6 col-2xl-12' aria-label='Card-Section'>
         <h1>I Migliori SuperEroi:</h1>
       </div>
-         <div class="container-hero">
-        <div class="card">
-        <div className='card-img'>
-          <img src="/img/hero/Superman_logo.png" alt="Superman"/>
-        </div>
-        <div class="card-content">
-            <h3 class="card-title">Superman</h3>
-            <p class="card-description">Il supereroe che proviene da Krypton. Ha una forza incredibile e può volare.</p>
-            <button class="card-btn">Scopri di più</button>
-        </div>
-        </div>
-        <div class="card">
-         <div className='card-img'>
-           <img src="/img/hero/Batman_logo.png" alt="Batman"/>
-         </div>
-        <div class="card-content">
-            <h3 class="card-title">Batman</h3>
-            <p class="card-description">Un uomo senza superpoteri ma con una mente geniale e una forza di volontà implacabile.</p>
-            <button class="card-btn">Scopri di più</button>
-        </div>
-        </div>
-        <div class="card">
-         <div className='card-img'>
-           <img src="/img/hero/Wonderman_logo.png" alt="Wonder Woman"/>
-         </div>
-            <div class="card-content">
-                <h3 class="card-title">Wonder Woman</h3>
-                <p class="card-description">Una guerriera amazzone, dotata di forza straordinaria e abilità combattive.</p>
-                <button class="card-btn">Scopri di più</button>
-            </div>
-        </div>
-    </div>
+      <div class="container-hero">
+        <Cards url={"/img/hero/Superman_logo.png"} title={"Superman"} description={"Il supereroe che proviene da Krypton. Ha una forza incredibile e può volare."}/>
+        <Cards url={"/img/hero/Batman_logo.png"} title={"Batman"} description={"Un uomo senza superpoteri ma con una mente geniale e una forza di volontà implacabile."}/>
+        <Cards url={"/img/hero/Wonderman_logo.png"} title={"Wonder Woman"} description={"Una guerriera amazzone, dotata di forza straordinaria e abilità combattive."}/>
+      </div>
     </section>
   )
 }
