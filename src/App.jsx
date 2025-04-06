@@ -13,8 +13,8 @@ import ListLinks from "./components/links.json"
 function App() {
   return (
     <>
-       <Header links={ListLinks}/>
-       <Hero links={ListLinks}/>
+       <Header links={ListLinks} />
+       <Hero links={ListLinks} />
        <Shop/>
        <footer className='footer-sc'>
         <Links links={ListLinks}/>
