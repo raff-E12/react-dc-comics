@@ -33,5 +33,11 @@
             "title": "Shop",
             "links": ["Shop DC", "Shop DC Collectibles"]
         }
+    ],
+
+    "Card":[
+        {"id": 0, "title": "Superman", "url": "./img/hero/Superman_logo.png", "description": "Il supereroe che proviene da Krypton. Ha una forza incredibile e può volare."},
+        {"id": 1, "title": "Batman", "url": "./img/hero/Batman_logo.png", "description": "Un uomo senza superpoteri ma con una mente geniale e una forza di volontà implacabile."},
+        {"id": 2, "title": "Wonder Woman", "url": "./img/hero/Wonderman_logo.png", "description": "Una guerriera amazzone, dotata di forza straordinaria e abilità combattive."}
     ]
 }

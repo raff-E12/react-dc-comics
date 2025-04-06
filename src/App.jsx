@@ -14,7 +14,7 @@ function App() {
   return (
     <>
        <Header links={ListLinks}/>
-       <Hero/>
+       <Hero links={ListLinks}/>
        <Shop/>
        <footer className='footer-sc'>
         <Links links={ListLinks}/>

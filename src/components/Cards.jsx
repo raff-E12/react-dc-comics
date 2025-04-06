@@ -1,16 +1,23 @@
 import React from 'react'
 
-export default function Cards({cardclass, url, title, description}) {
+// Componente Card 
+
+export default function Cards(props) {
+  const { classCards, list } = props;
   return (
-    <div className="card">
+    <>
+    {list.Card.map((cards) =>{return(
+          <div className={classCards}>
           <div className="card-img">
-            <img src={url} alt={title}/>
+            <img src={cards.url} alt={cards.title}/>
           </div>
           <div class="card-content">
-              <h3 class="card-title">{title}</h3>
-              <p class="card-description">{description}</p>
+              <h3 class="card-title">{cards.title}</h3>
+              <p class="card-description">{cards.description}</p>
               <button class="card-btn">Scopri di più</button>
           </div>
-    </div>
+        </div>
+    )})}
+    </>
   )
 }
