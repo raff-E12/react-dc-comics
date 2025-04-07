@@ -39,5 +39,21 @@
         {"id": 0, "title": "Superman", "url": "./img/hero/Superman_logo.png", "description": "Il supereroe che proviene da Krypton. Ha una forza incredibile e può volare."},
         {"id": 1, "title": "Batman", "url": "./img/hero/Batman_logo.png", "description": "Un uomo senza superpoteri ma con una mente geniale e una forza di volontà implacabile."},
         {"id": 2, "title": "Wonder Woman", "url": "./img/hero/Wonderman_logo.png", "description": "Una guerriera amazzone, dotata di forza straordinaria e abilità combattive."}
+    ],
+
+    "Shop":[
+        {"id": 0, "url": "/img/buy-comics-digital-comics.png", "title": "Digital Comics"},
+        {"id": 1, "url": "/img/buy-comics-merchandise.png", "title": "DC Merchandise"},
+        {"id": 2, "url": "/img/buy-comics-subscriptions.png", "title": "SubScription"},
+        {"id": 3, "url": "/img/buy-comics-shop-locator.png", "title": "Comic Shop Locator"},
+        {"id": 4, "url": "/img/buy-dc-power-visa.svg", "title": "DC Power Visa"}
+    ],
+
+    "Social":[
+        {"id": 0, "url": "/img/footer-facebook.png"},
+        {"id": 1, "url": "/img/footer-periscope.png"},
+        {"id": 2, "url": "/img/footer-pinterest.png"},
+        {"id": 3, "url": "/img/footer-twitter.png"},
+        {"id": 4, "url": "/img/footer-youtube.png"}
     ]
 }

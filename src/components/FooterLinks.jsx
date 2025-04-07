@@ -1,5 +1,5 @@
 import React from 'react'
-import list from "./links.json"
+import components from "./links.json"
 
 //Importazione della lista dinamica
 

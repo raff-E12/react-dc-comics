@@ -313,10 +313,7 @@
   justify-content: center;
   gap: 20px;
   width: 100%;
-  background-image: var(--bg-img-hero);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: var(--main-color-general);
 }
 
 .container-hero {
@@ -410,11 +407,6 @@
   .dc-shop-logo{
     display: none;
   }
-
-  .hero-sc{
-    background-image: none;
-    background-color: var(--main-color-general);
-  }
 }
 
 @media (max-width: 576px) {
@@ -424,10 +416,6 @@
   
   .dc-shop-logo{
     display: none;
-  }
-
-  .hero-sc{
-    background-color: var(--main-color-general);
   }
 }
 
