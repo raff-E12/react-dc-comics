@@ -7,6 +7,7 @@ import Shop from './assets/Shop'
 import Links from './assets/Links'
 import Social from './assets/Social'
 import ListComponets from "./components/links.json"
+import ComicsSections from './assets/ComicsSections'
 
 // Creazione della struttura principale del sito
 
@@ -15,6 +16,7 @@ function App() {
     <>
        <Header links={ListComponets} />
        <Hero links={ListComponets} />
+       <ComicsSections />
        <Shop links={ListComponets}/>
        <footer className='footer-sc'>
         <Links links={ListComponets}/>

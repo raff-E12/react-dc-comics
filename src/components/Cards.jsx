@@ -7,6 +7,7 @@ export default function Cards(props) {
   const { classCards, list } = props;
   return (
     <>
+    <div class="container-hero">
     {list.Card.map((cards) =>{return(
           <div className={classCards}>
           <div className="card-img">
@@ -19,6 +20,7 @@ export default function Cards(props) {
           </div>
         </div>
     )})}
+    </div>
     </>
   )
 }
