@@ -250,6 +250,7 @@
   padding: 17px;
   font-family: var(--font-site-url);
   overflow: hidden;
+  position: relative;
 }
 
 .nav-links-hd{
@@ -302,8 +303,13 @@
     display: none;
   }
 
+  .header-sc{
+    overflow: visible;
+  }
+
   .box-icon.ham{
     display: flex;
+    cursor: pointer;
   }
 }
 
@@ -703,6 +709,7 @@
    height: 300px;
    position: relative;
    overflow: hidden;
+   border: 2px solid var(--main-color-general);
 }
 
 .thumbs-box:hover{
@@ -786,5 +793,81 @@
     left: 22px;
     top: -29px;
     margin: 16px;
+  }
+}
+
+/* Ham Menu Active */
+
+.ham-box-left{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--general-color);
+  right: -1000px;
+  top: 0;
+  padding: 10px;
+  width: 300px;
+  gap: 30px;
+  height: 100vh;
+  box-shadow: 1px 1px 10px 10px var(--main-color-general);
+}
+
+.ham-box-left .list-nav{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ham-box-left .list-nav li a{
+  font-size: 1.3em;
+  color: var(--main-color-general);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.ham-box-left .list-nav li a:hover{
+  color: var(--secondary-color);
+}
+
+.col-ham{
+  display: flex;
+  font-size: 1.5em;
+  justify-content: flex-end;
+  justify-items: flex-end;
+  width: 100%;
+  color: var(--main-color-general);
+  padding: 10px;
+}
+
+.ham-box-left.aside{
+  right: -1000px;
+  opacity: 0;
+  transition: all ease-in-out .30s;
+}
+
+.ham-box-left.show{
+  right: -1000px;
+  opacity: 100;
+  transition: all ease .30s;
+}
+
+.fa-solid.fa-xmark{
+  cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 900px) {
+  
+  .ham-box-left{
+    right: -10px;
+  }
+
+  .ham-box-left.show{
+    right: -10px;
+    opacity: 100;
+    transition: all ease .30s;
   }
 }

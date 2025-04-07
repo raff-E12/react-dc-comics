@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navlinks from '../components/Navlinks'
 
 export default function Header(props) {
   const list_links = props.links;
+  const [isOpen, SetOpen] = useState(false);
+  console.log(isOpen)
   return (
    <>
    <header className='header-sc container-flex-fluid col-sm-12 col-xxl-12' aria-label='Header-Section'>
@@ -14,8 +16,14 @@ export default function Header(props) {
         <Navlinks list={list_links}/>
       </div>
       <div className='box-icon ham'>
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" onClick={()=>{SetOpen( value => !value)}}></i>
       </div>
+      </div>
+      <div className={`ham-box-left ${isOpen ? "show" : "aside"}`}>
+         <div className='col-ham'>
+            <i class="fa-solid fa-xmark" onClick={() => {SetOpen(value => !value)}}></i>
+         </div>
+         <Navlinks list={list_links}/>
       </div>
    </header>
    </>
